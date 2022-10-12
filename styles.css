@@ -55,5 +55,55 @@
 
 .search-part {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 3fr 2fr;
+    align-self: center;
+}
+
+.search-part-left {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.search-part-right {
+    display: grid;
+    grid-template-columns: 50px 100px 140px;
+    justify-self: end;
+}
+
+.search-part-right > *, .search-part-left > * {
+    align-self: center;
+}
+
+.profile-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-part-left {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.profile-text {
+    align-self: center;
+}
+
+.profile-part-right {
+    justify-self: end;
+    align-self: center;
+    padding-right: 30px;
+}
+
+button {
+    background-color: #1A92D5;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 96px;
+    height: 36px;
+    border: 0;
+    border-radius: 25px;
+    margin-left: 36px;
 }
